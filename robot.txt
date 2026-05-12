@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://survey.audiomasjidindonesia.web.id/sitemap.xml
+Sitemap: https://audiomasjidindonesia.web.id/sitemap.xml
