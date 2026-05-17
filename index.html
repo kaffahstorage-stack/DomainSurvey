@@ -2093,7 +2093,30 @@ body{
 .article-card:hover .article-image img {
     transform: scale(1.05);
 }
+.seo-links-footer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 
+    opacity:0.03; /* hampir transparan */
+    
+    font-size:1px; /* kecil banget */
+    
+    user-select:none;
+
+    margin-top:10px;
+}
+
+.seo-links-footer a{
+    color:transparent; /* tulisan hilang */
+
+    text-decoration:none;
+
+    pointer-events:none; /* tidak bisa diklik user */
+
+    cursor:default;
+}
 
 </style>
 </head>
@@ -2259,6 +2282,7 @@ body{
 
 </div>
         <div class="hero-buttons">
+		
 
             <a href="https://survey.audiomasjidindonesia.web.id/"
                class="hero-btn primary">
@@ -2687,6 +2711,21 @@ body{
         <p>Iya, anda bisa daftar tanpa harus survey kualitas audio dan buat survey anda sendiri selain survey kualitas audio sesuai kebutuhan 😁.</p>
     </div>
 	
+</div>
+<div class="seo-links-footer">
+
+    <a href="https://survey.audiomasjidindonesia.web.id/">
+        Survey Audio Masjid
+    </a>
+
+    <a href="http://pendaftaran.audiomasjidindonesia.web.id/">
+        Daftarkan Masjid
+    </a>
+
+    <a href="https://wira.audiomasjidindonesia.web.id/">
+        Wira Audio Banjarbaru
+    </a>
+
 </div>
 <!-- FOOTER -->
 
