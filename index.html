@@ -2059,6 +2059,40 @@ body{
         right:18px;
     }
 }
+.text-justify {
+    text-align: justify;
+}
+.about-card p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    text-indent: 30px; /* ini bikin kalimat pertama masuk ke dalam */
+}
+
+.about-card p:last-child {
+    margin-bottom: 0;
+}
+.article-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 18px;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.article-image img {
+    transition: transform 0.5s ease;
+}
+
+.article-card:hover .article-image img {
+    transform: scale(1.05);
+}
 
 
 </style>
@@ -2209,7 +2243,7 @@ body{
 
         <p>
             Membantu meningkatkan kualitas suara masjid agar jamaah
-            lebih nyaman dalam mendengarkan ceramah dan tausiah.
+            lebih nyaman dan khusyuk beribadah
         </p>
 <!-- AUDIO VISUALIZER -->
 
@@ -2264,7 +2298,7 @@ body{
     <div class="stats-grid">
         
 		
-		
+		 
         <div class="stat-card reveal" data-delay="1">
             <i class="fa-solid fa-users"></i>
             <h2 id="onlineCount">0</h2>
@@ -2288,6 +2322,8 @@ body{
     <p>Rata-rata Rating</p>
 </div>
 
+
+
     </div>
 
 </section>
@@ -2300,50 +2336,41 @@ body{
         <h2>Kenapa Survey Ini Penting?</h2>
 
         <p>
-            Audio yang baik membantu jamaah lebih fokus
-            dan nyaman saat mendengarkan tausiah.
+            Ketua Dewan Masjid Indonesia Jusuf Kala mengatakan 80% Kegiatan di masjid itu mendengarkan. Tetapi 75% sound systemnya sangat buruk. 
         </p>
     </div>
 
     <div class="about-grid">
 
        <div class="about-card reveal" data-delay="1">
-    <i class="fa-solid fa-volume-high"></i>
-    <h3>Kejernihan Suara</h3>
-    <p>
-        Kami membantu mengukur apakah suara di masjid sudah terdengar jelas,
-        merata, dan mudah dipahami oleh seluruh jamaah tanpa distorsi.
+    <i class="fa-solid fa-users"></i>
+    <h3>Menampung Aspirasi</h3>
+
+    <p style="text-align: justify;">
+        Di banyak masjid, jamaah sering kesulitan mendengarkan kajian dengan jelas karena kualitas sound system yang kurang optimal. Sayangnya, banyak dari mereka tidak tahu harus menyampaikan keluhan tersebut ke mana, sehingga hanya menjadi bahan obrolan tanpa solusi nyata.
     </p>
+
+    <p style="text-align: justify;">
+       melalui website survey ini kami mencoba menjembatani setiap aspirasi jamaah agar dapat tersampaikan dengan mudah, tercatat, dan ditindaklanjuti. Karena setiap suara jamaah berhak didengar, dan setiap masjid berhak menjadi lebih baik.
+    </p>
+
 </div>
 
-<div class="about-card reveal" data-delay="2">
-    <i class="fa-solid fa-wave-square"></i>
-    <h3>Kontrol Echo & Resonansi</h3>
-    <p>
-        Echo berlebihan dapat mengganggu pemahaman khutbah. Survey ini membantu
-        mengidentifikasi dan mengurangi masalah pantulan suara di dalam ruangan.
-    </p>
-</div>
 
-<div class="about-card reveal" data-delay="3">
-    <i class="fa-solid fa-chart-line"></i>
-    <h3>Data Real-Time</h3>
-    <p>
-        Semua hasil survey langsung tersimpan secara otomatis dan dianalisis
-        secara real-time menggunakan sistem Firebase.
-    </p>
-</div>
 
-<div class="about-card reveal" data-delay="4">
+ <div class="about-card reveal" data-delay="1">
     <i class="fa-solid fa-mosque"></i>
     <h3>Peningkatan Kualitas Masjid</h3>
-    <p>
-        Data ini digunakan untuk membantu pengurus masjid meningkatkan kualitas
-        sound system agar dakwah lebih efektif dan nyaman didengar.
-    </p>
-</div>
 
-    </div>
+    <p style="text-align: justify;">
+       Website survey ini hadir untuk memudahkan takmir atau BKM masjid dalam menampung aspirasi jamaah secara cepat, mudah, dan terstruktur. Setiap masukan yang diberikan dapat menjadi bahan evaluasi untuk melakukan perbaikan serta meningkatkan kualitas pelayanan masjid ke depannya.
+    </p>
+
+    <p style="text-align: justify;">
+       Selain itu, survey juga dapat digunakan untuk mengukur tingkat kepuasan jamaah terhadap sarana dan prasarana masjid. Dengan begitu, lingkungan ibadah yang lebih nyaman, tertata, dan khusyuk dapat terus diwujudkan bagi seluruh jamaah.
+    </p>
+
+</div>
 
 </section>
 
@@ -2363,76 +2390,78 @@ body{
 
     <div class="article-grid">
 
-        <div class="article-card reveal" data-delay="1">
-            <div class="article-image"></div>
+       <div class="article-card reveal" data-delay="1">
 
-            <div class="article-content">
-                <h3>Masjid Bukan Galeri Seni</h3>
+    <div class="article-image">
+        <img src="assets/images/masjid1.jpg" alt="Audio Masjid">
+    </div>
 
-                <p>
-                    Masjid bukan galeri seni. Ia bukan sekadar objek untuk dipotret, dipamerkan,
-            atau dibanggakan dalam portofolio. Masjid adalah ruang penyampaian makna:
-            tempat ayat dibaca, khutbah disampaikan, dan ilmu ditransmisikan secara lisan.
-            Jika suara pembicara terdengar tetapi tidak dapat dipahami, maka ada kegagalan
-            serius dalam memenuhi fungsi dasarnya.
-                </p>
-            </div>
-        </div>
+    <div class="article-content">
+        <h3>Masjid Bukan Galeri Seni</h3>
+
+        <p style="text-align: justify;">
+            Masjid bukan galeri seni. Ia bukan sekadar objek untuk dipotret,
+            dipamerkan, atau dibanggakan dalam portofolio. Masjid adalah ruang
+            penyampaian makna: tempat ayat dibaca, khutbah disampaikan, dan ilmu
+            ditransmisikan secara lisan. Jika suara pembicara terdengar tetapi
+            tidak dapat dipahami, maka ada kegagalan serius dalam memenuhi fungsi dasarnya.
+        </p>
+    </div>
+
+</div>
 
        <div class="article-card reveal" data-delay="2">
-            <div class="article-image"></div>
 
-            <div class="article-content">
-                <h3>80% Kegiatan Masjid adalah Mendengar</h3>
+    <div class="article-image">
+        <img src="assets/images/masjid2.jpg" alt="Audio Masjid">
+    </div>
 
-                <p>
-                     Ketua Dewan Masjid Indonesia, Jusuf Kalla, menyebutkan bahwa sekitar 80%
-            aktivitas di masjid adalah mendengarkan: khutbah, ceramah, dan kajian.
-            Namun ironisnya, sekitar 75% sistem audio masjid masih memiliki kualitas yang buruk,
-            sehingga pesan tidak tersampaikan dengan optimal kepada jamaah.
-                </p>
-            </div>
-        </div>
+    <div class="article-content">
+        <h3>80% Kegiatan Masjid adalah Mendengar</h3>
 
-        <div class="article-card reveal" data-delay="3">
-            <div class="article-image"></div>
+        <p style="text-align: justify;">
+            Ketua Dewan Masjid Indonesia, Jusuf Kalla, menyebutkan bahwa sekitar 80% aktivitas di masjid adalah mendengarkan: khutbah, ceramah, dan kajian. Namun ironisnya, sekitar 75% sistem audio masjid masih memiliki kualitas yang buruk, sehingga pesan tidak tersampaikan dengan optimal kepada jamaah.
 
-            <div class="article-content">
-                <h3>Pentingnya Kejelasan Suara di Masjid</h3>
+        </p>
+    </div>
 
-                <p>
-                    Kualitas suara bukan hanya soal keras atau pelan, tetapi soal kejelasan.
-            Audio yang baik membuat setiap kata mudah dipahami tanpa perlu berulang kali fokus.
-            Dengan sistem sound yang tepat, masjid bisa menjadi ruang ilmu yang lebih efektif
-            dan nyaman bagi seluruh jamaah.
-                </p>
-            </div>
-        </div>
+</div>
 
-<div class="article-card reveal" data-delay="4">
-            <div class="article-image"></div>
+       <div class="article-card reveal" data-delay="3">
 
-            <div class="article-content">
-                <h3>Bahaya Echo Berlebihan</h3>
+    <div class="article-image">
+        <img src="assets/images/masjid3.jpg" alt="Audio Masjid">
+    </div>
 
-                <p>
-                    Echo yang terlalu berlebihan membuat suara bertumpuk
-                    dan sulit dipahami oleh jamaah, karena itu echo tidak baik banyak-banyak / tidak perlu sama sekali
-                </p>
-            </div>
-        </div>
+    <div class="article-content">
+        <h3>Pentingnya Kejelasan Suara di Masjid</h3>
 
-<div class="article-card reveal" data-delay="5">
-            <div class="article-image"></div>
+        <p style="text-align: justify;">
+            Kualitas suara bukan hanya soal keras atau pelan, tetapi soal kejelasan. Audio yang baik membuat setiap kata mudah dipahami tanpa perlu berulang kali fokus. Dengan sistem sound yang tepat, masjid bisa menjadi ruang ilmu yang lebih efektif dan nyaman bagi seluruh jamaah.
 
-            <div class="article-content">
-                <h3>Kenapa Audio Masjid Harus Jelas?</h3>
 
-                <p>
-                    Audio yang jelas membantu jamaah memahami isi ceramah tanpa terganggu noise maupun echo berlebihan.
-                </p>
-            </div>
-        </div>
+        </p>
+    </div>
+
+</div>
+
+ <div class="article-card reveal" data-delay="4">
+
+    <div class="article-image">
+        <img src="assets/images/masjid4.jpg" alt="Audio Masjid">
+    </div>
+
+    <div class="article-content">
+        <h3>Bahaya Echo Berlebihan</h3>
+
+        <p style="text-align: justify;">
+            Echo yang terlalu berlebihan membuat suara bertumpuk dan sulit dipahami oleh jamaah, karena itu echo tidak baik banyak-banyak / tidak perlu sama sekali
+        </p>
+    </div>
+
+</div>
+
+
 
 
 
@@ -2446,7 +2475,7 @@ body{
 
     <div class="cta-box reveal">
 
-        <h2>Siap Membantu Relawan Audio Masjid Jadi Lebih Baik?</h2>
+        <h2>Siap Membantu Agar Masjid Jadi Lebih Baik?</h2>
 
         <p>
             Daftarkan survey masjid anda sekarang dan bantu meningkatkan kenyamanan
@@ -2509,6 +2538,16 @@ body{
     </div>
 
 </section>
+
+
+
+<div class="ranking-box">
+    <h2>🌍 Asal Pengunjung Website</h2>
+    <ul id="cityList"></ul>
+</div>
+
+
+
 <!-- JADWAL SHOLAT MODERN -->
 
 <section class="prayer-section">
@@ -3030,10 +3069,8 @@ onValue(surveyRef, (snapshot) => {
 const texts = [
 
     "Selamat Datang",
-    "Survey Audio Masjid Indonesia",
-    "Siap Membantu Relawan Audio Masjid Dengan Mengisi Survey?",    
-	"Ayo Membantu Meningkatkan Kualitas Sound System Masjid",
-    "Powered by Wira Audio"
+    "Survey Audio Masjid Indonesia"
+
 
 ];
 
@@ -3295,13 +3332,121 @@ async function loadPrayerTimes(){
 }
 
 loadPrayerTimes();
+/* =========================
+   TRACK CITY VISITOR
+========================= */
+
+async function getLocation() {
+
+    try {
+
+        const res = await fetch("https://ipinfo.io/json?token=73fba7961d0795");
+        const data = await res.json();
+
+        const city = data.city || "Unknown";
+        const region = data.region || "";
+        const country = data.country || "ID";
+
+        return {
+            city,
+            region,
+            country
+        };
+
+    } catch (err) {
+        console.log("IPinfo error:", err);
+
+        return {
+            city: "Unknown",
+            region: "",
+            country: "ID"
+        };
+    }
+}
 
 
 
 
+async function trackVisitorCity() {
 
+    const loc = await getLocation();
+    const city = loc.city || "Unknown";
 
+    const visitorKey = "visitor_" + getTodayKey();
 
+    const cityRef = ref(db, "cityStats/" + city);
+
+    const { runTransaction } =
+    await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js");
+
+    runTransaction(cityRef, (current) => {
+
+        if (!current) {
+            return {
+                name: city,
+                count: 1,
+                visitors: {
+                    [visitorKey]: true
+                }
+            };
+        }
+
+        if (current.visitors?.[visitorKey]) {
+            return current; // sudah pernah hari ini
+        }
+
+        return {
+            ...current,
+            count: (current.count || 0) + 1,
+            visitors: {
+                ...(current.visitors || {}),
+                [visitorKey]: true
+            }
+        };
+    });
+}
+const visitorKey = "visitor_" + getTodayKey();
+
+function getTodayKey() {
+    const d = new Date();
+    return d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
+}
+window.addEventListener("load", () => {
+    trackVisitorCity();
+});
+const cityRootRef = ref(db, "cityStats");
+
+onValue(cityRootRef, (snapshot) => {
+
+    const data = snapshot.val();
+
+    const list = document.getElementById("cityList");
+    list.innerHTML = "";
+
+    if (!data) return;
+
+    const cities = Object.values(data);
+
+    cities.sort((a, b) => b.count - a.count);
+
+    cities.forEach((item, index) => {
+
+        const medal =
+            index === 0 ? "🥇" :
+            index === 1 ? "🥈" :
+            index === 2 ? "🥉" : "📍";
+
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <span>${medal} ${item.name}</span>
+            <b>${item.count}</b>
+        `;
+
+        list.appendChild(li);
+    });
+
+});
 
 
 
